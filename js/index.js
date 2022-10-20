@@ -50,18 +50,14 @@ console.log(reverse)
 /* 3.3 Depending ont he lexicographic order of the strings, print:
 - The driver's name goes first.
 - Yo, the navigator goes first definitely.
-- What?! Do */
+- What?! You both have the same name ? */
 
-let list = [hacker1, hacker2]
-
-list.sort()
-
-for (let i = 0; i < list.length; i++) {
-    if (list[i] === hacker1) {
-        console.log("The driver's name goes first")
-        break
-    } else if (list[i] === hacker2) {
-        console.log("Yo, the navigator goes first definitely")
-        break
-    }
+if (hacker1.localeCompare(hacker2) === 0) {
+    console.log("What?! You both have the same name ?")
+}
+if (hacker1.localeCompare(hacker2) > 0) {
+    console.log("Yo, the navigator goes first definitely.")
+}
+if (hacker1.localeCompare(hacker2) < 0) {
+    console.log("The driver's name goes first")
 }
