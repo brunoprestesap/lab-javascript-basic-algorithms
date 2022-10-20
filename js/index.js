@@ -47,6 +47,11 @@ for (let i = hacker2.length -1; i >= 0; i--) {
 
 console.log(reverse)
 
+/* 3.3 Depending ont he lexicographic order of the strings, print:
+- The driver's name goes first.
+- Yo, the navigator goes first definitely.
+- What?! Do */
+
 let list = [hacker1, hacker2]
 
 list.sort()
